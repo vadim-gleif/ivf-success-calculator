@@ -13,15 +13,15 @@ data class ComputeFertilityRequest(
     val heightFeet: Int,
     val heightInch: Int,
 
-    val tubalFactor: Boolean,
-    val maleFactorInfertility: Boolean,
-    val endometriosis: Boolean,
-    val ovulatoryDisorder: Boolean,
-    val diminishedOvarianReserve: Boolean,
-    val uterineFactor: Boolean,
-    val otherReason: Boolean,
+    val tubalFactor: Boolean = false,
+    val maleFactorInfertility: Boolean = false,
+    val endometriosis: Boolean = false,
+    val ovulatoryDisorder: Boolean = false,
+    val diminishedOvarianReserve: Boolean = false,
+    val uterineFactor: Boolean = false,
+    val otherReason: Boolean = false,
 
-    val isReasonForInfertilityUnexplained: Boolean,
+    val isReasonForInfertilityUnexplained: Boolean = false,
 
     val numberOfPriorPregnancies: Int,
     val numberOfLiveBirths: Int,
